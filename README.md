@@ -1,1 +1,1 @@
-# FD2-core
+# mentoring-simple-webpack-starter

@@ -1,18 +1,23 @@
-import { render } from 'sass'
-import{ Component } from '../../core'
-
-export class Button extends Component{
-        constructor()
+import { Component } from '../../core'
+import './button.scss'
+export class Button extends Component {
+    constructor() {
         super();
         this.state = {
-            isActiv: false
+            count:1
         }
-}
+    }
 
-render(){
-    return`
-    <button>Click</button>
-    `
+    render() {
+        return `
+        <button class="plus">+</button>
+        <span>${this.state.count}</span>
+        <button class="minus">-</button>
+        `
+    }
+
+
 }
 
 customElements.define('my-button', Button)
+
